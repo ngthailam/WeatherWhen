@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">WeatherWhen</string>
+    <string name="error_no_internet_connection">No Internet connection detected</string>
 </resources>
