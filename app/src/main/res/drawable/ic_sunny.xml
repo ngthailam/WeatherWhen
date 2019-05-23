@@ -1,0 +1,63 @@
+<vector xmlns:aapt="http://schemas.android.com/aapt" xmlns:android="http://schemas.android.com/apk/res/android"
+        android:height="200dp" android:viewportHeight="1000"
+        android:viewportWidth="750" android:width="200dp">
+    <path android:pathData="M0,0L750,0L750,1000L0,1000L0,0Z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:endX="743.62" android:endY="9.15"
+                      android:startX="4.79" android:startY="1000" android:type="linear">
+                <item android:color="#FF496BF5" android:offset="0"/>
+                <item android:color="#FF6EE5DF" android:offset="1"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path
+        android:pathData="M397.45,130.83C397.45,277.09 278.7,395.83 132.45,395.83C-13.81,395.83 -132.55,
+        277.09 -132.55,130.83C-132.55,-15.43 -13.81,-134.17 132.45,-134.17C278.7,-134.17 397.45,-15.43 397.45,130.83Z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:centerX="132.45" android:centerY="130.83"
+                      android:gradientRadius="265" android:type="radial">
+                <item android:color="#8C676565" android:offset="0"/>
+                <item android:color="#3FFFDA70" android:offset="1"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path
+        android:pathData="M332.46,140.83C332.46,242.93 247.43,325.83 142.71,325.83C37.98,325.83 -47.04,242.93 -47.04,
+        140.83C-47.04,38.73 37.98,-44.17 142.71,-44.17C247.43,-44.17 332.46,38.73 332.46,140.83Z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:centerX="142.71" android:centerY="140.83"
+                      android:gradientRadius="247.54" android:type="radial">
+                <item android:color="#99929292" android:offset="0"/>
+                <item android:color="#7FFFDA70" android:offset="1"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path
+        android:pathData="M263.72,133.76C263.72,202.74 206.24,258.76 135.45,258.76C64.66,258.76 7.18,202.74 7.18,
+        133.76C7.18,64.77 64.66,8.76 135.45,8.76C206.24,8.76 263.72,64.77 263.72,133.76Z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:centerX="135.45" android:centerY="133.76"
+                      android:gradientRadius="167.26" android:type="radial">
+                <item android:color="#FF929292" android:offset="0"/>
+                <item android:color="#BFFFDA70" android:offset="1"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path android:fillAlpha="1" android:fillColor="#fbcd4a"
+          android:pathData="M204.79,130.83C204.79,168.99 172.37,199.98 132.45,199.98C92.52,199.98 60.11,168.99 60.11,
+          130.83C60.11,92.67 92.52,61.68 132.45,61.68C172.37,61.68 204.79,92.67 204.79,130.83Z"/>
+    <path android:fillAlpha="0.48" android:fillColor="#000000"
+          android:pathData="M381.52,768.38L381.52,777.49L399.77,777.49L399.77,786.33L414.14,786.33L414.14,
+          861.96L471.69,861.96L471.69,916.72L475.49,916.72L522.06,868.25L522.06,765.43L536.43,765.43L536.43,
+          756.6L551.22,756.6L551.22,749.72L586.78,749.72L586.78,756.6L601.56,756.6L601.56,765.43L615.94,
+          765.43L615.94,886.28L631.67,886.28L631.67,857.41L658.29,857.41L658.29,886.28L679.44,886.28L679.44,
+          820.42L781.05,866.64L750,866.64L750,1004.76L688.53,1004.76L688.53,1015.28L608.88,1015.28L608.88,
+          1004.76L540.89,1004.76L540.89,1164.88L447.01,1164.88L447.01,1004.76L414.14,1004.76L414.14,1025.65L333.95,
+          1025.65L333.95,1082.98L298.67,1082.98L298.67,1143.68L204.79,1143.68L204.79,1029.85L142.71,1029.85L142.71,
+          1149.72L48.83,1149.72L48.83,1082.98L-43.19,1082.98L-43.19,843.65L-28.81,843.65L-28.81,834.82L36.32,
+          834.82L36.32,843.65L50.69,843.65L50.69,910.4L63.2,910.4L63.2,901.57L79.35,901.57L79.35,891.31L105.97,
+          891.31L105.97,901.57L128.33,901.57L128.33,910.4L135.45,910.4L135.45,836.86L136.01,836.86L243.89,
+          803.81L243.89,895.52L284.29,895.52L284.29,904.36L298.67,904.36L298.67,940.18L320.26,940.18L320.26,
+          786.33L334.63,786.33L334.63,777.49L345.96,777.49L345.96,768.38L363.74,768.38L363.74,661.01L367.2,
+          661.01L367.2,768.38L381.52,768.38Z"/>
+</vector>
