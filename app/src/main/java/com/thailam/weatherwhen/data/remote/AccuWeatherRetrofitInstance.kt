@@ -18,7 +18,7 @@ object AccuWeatherRetrofitInstance {
      * API_KEY_QUERY_PARAM : query parameter in request
      */
     private const val API_KEY_QUERY_PARAM = "apikey"
-    private const val API_KEY_QUERY_VALUE: String = BuildConfig.API_KEY
+    private const val API_KEY_QUERY_VALUE = BuildConfig.API_KEY
 
     private val requestInterceptor = Interceptor { chain ->
         val url = chain.request()
