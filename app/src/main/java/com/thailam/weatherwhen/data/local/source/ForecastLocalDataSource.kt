@@ -8,9 +8,11 @@ import io.reactivex.Single
 class ForecastLocalDataSource(
     val forecastDao: DailyForecastDao
 ) : ForecastDataSource.Local {
-    override fun getDailyForecastsLocal(): Single<List<DailyForecast>> {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
+    override fun getLastUpdateAsync(): DailyForecast =
+        forecastDao.getLastUpdateAsync()
+
+    override fun getDailyForecastsLocal(): Single<List<DailyForecast>> =
+        forecastDao.getDailyForecasts()
 
     override fun addDailyForecasts(dailyForecasts: List<DailyForecast>) =
         forecastDao.addDailyForecasts(dailyForecasts)

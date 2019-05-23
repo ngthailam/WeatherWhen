@@ -19,5 +19,8 @@ val forecastModule = module(override = true) {
     single<ForecastDataSource.Local> { ForecastLocalDataSource(get()) }
     factory { get<AppDatabase>().dailyForecastDao() }
     single<ForecastRepository> { ForecastRepositoryImpl(get(), get()) }
+}
+
+val viewModelModule = module(override = true) {
     viewModel { ForecastViewModel(get()) }
 }

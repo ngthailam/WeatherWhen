@@ -28,6 +28,9 @@ class ForecastViewModel(
     fun fetchDailyForecasts(geoPosition: Pair<String, String>) {
         val disposable = forecastRepository.fetchDailyForecasts(geoPosition)
             .subscribeOn(Schedulers.io())
+            .doOnSubscribe {
+                _dailyForecastsLiveData.postValue(Response.loading())
+            }
             .doOnSuccess {
                 forecastRepository.addDailyForecasts(it)
             }
