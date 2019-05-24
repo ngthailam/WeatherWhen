@@ -47,12 +47,12 @@ class ForecastRepositoryImpl(
     override fun getDailyForecastsRemote(locationKey: String): Single<WeatherResponse> =
         forecastRemoteDataSource.getDailyForecastsRemote(locationKey)
 
-    override fun getLastUpdateAsync(): DailyForecast =
-        forecastLocalDataSource.getLastUpdateAsync()
+    override fun getLastUpdatedForecast(): DailyForecast =
+        forecastLocalDataSource.getLastUpdatedForecast()
 
     private suspend fun checkIfShouldRefresh(): Boolean = coroutineScope {
         withContext(Dispatchers.IO) {
-            val lastUpdatedDate = withContext(Dispatchers.IO) { getLastUpdateAsync() }.date
+            val lastUpdatedDate = withContext(Dispatchers.IO) { getLastUpdatedForecast() }.date
             lastUpdatedDate.equals(CURRENT_DATE_Y_M_D, ignoreCase = true)
         }
     }

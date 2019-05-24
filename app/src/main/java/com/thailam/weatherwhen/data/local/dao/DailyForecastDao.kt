@@ -17,5 +17,5 @@ abstract class DailyForecastDao {
     abstract fun addDailyForecasts(dailyForecasts: List<DailyForecast>)
 
     @Query(value = "SELECT * FROM $TBL_FORECAST_NAME LIMIT 1")
-    abstract fun getLastUpdateAsync(): DailyForecast
+    abstract fun getLastUpdatedForecast(): DailyForecast
 }

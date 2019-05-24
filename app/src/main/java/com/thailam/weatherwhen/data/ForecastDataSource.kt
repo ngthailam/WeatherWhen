@@ -9,7 +9,7 @@ interface ForecastDataSource {
     interface Local {
         fun addDailyForecasts(dailyForecasts: List<DailyForecast>)
         fun getDailyForecastsLocal(): Single<List<DailyForecast>>
-        fun getLastUpdateAsync(): DailyForecast
+        fun getLastUpdatedForecast(): DailyForecast
     }
 
     interface Remote {
