@@ -42,7 +42,6 @@ class MainActivity : BaseActivity() {
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
-        super.onSaveInstanceState(outState)
         outState.putBoolean(BUNDLE_IS_NIGHT, isCurrentNight)
         super.onSaveInstanceState(outState)
     }

@@ -206,7 +206,7 @@
         android:id="@+id/progressBarForecastScreen"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="0dp"
-        android:layout_height="20dip"
+        android:layout_height="@dimen/dip_20"
         android:layout_marginStart="@dimen/dp_8"
         android:layout_marginEnd="@dimen/dp_8"
         android:indeterminate="true"
