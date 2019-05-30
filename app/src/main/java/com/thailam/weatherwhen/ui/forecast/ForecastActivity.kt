@@ -1,6 +1,7 @@
-package com.thailam.weatherwhen.ui
+package com.thailam.weatherwhen.ui.forecast
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.location.Location
 import android.os.Bundle
 import android.view.View
@@ -15,6 +16,7 @@ import com.thailam.weatherwhen.R
 import com.thailam.weatherwhen.adapter.ForecastAdapter
 import com.thailam.weatherwhen.data.model.*
 import com.thailam.weatherwhen.ui.base.BaseActivity
+import com.thailam.weatherwhen.ui.schedule.ScheduleActivity
 import com.thailam.weatherwhen.utils.DateFormatUtils
 import com.thailam.weatherwhen.utils.MyAnimationUtils
 import com.thailam.weatherwhen.utils.appendUnit
@@ -23,7 +25,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 
-class MainActivity : BaseActivity() {
+class ForecastActivity : BaseActivity() {
 
     private val forecastViewModel: ForecastViewModel by viewModel()
     private var isCurrentNight: Boolean = false
@@ -147,7 +149,7 @@ class MainActivity : BaseActivity() {
             toggleDayNightForecast()
         }
         fabOpenSchedule.setOnClickListener {
-            // TODO: implement in next task
+            startActivity(Intent(this, ScheduleActivity::class.java))
         }
     }
 
@@ -223,13 +225,13 @@ class MainActivity : BaseActivity() {
             text = resources.getString(titleId)
             DrawableCompat.setTint(
                 this.background,
-                ContextCompat.getColor(this@MainActivity, colorId)
+                ContextCompat.getColor(this@ForecastActivity, colorId)
             )
         }
 
     private fun initRecyclerView() {
         recycler_forecast.apply {
-            layoutManager = LinearLayoutManager(this@MainActivity)
+            layoutManager = LinearLayoutManager(this@ForecastActivity)
             setHasFixedSize(true)
             adapter = forecastAdapter
         }
