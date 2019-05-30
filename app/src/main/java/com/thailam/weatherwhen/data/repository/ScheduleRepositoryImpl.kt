@@ -10,7 +10,7 @@ class ScheduleRepositoryImpl(
     override fun getAllSchedules(): Single<List<Schedule>> =
         scheduleLocalDataSource.getAllSchedules()
 
-    override fun addSchedule(schedule: Schedule): Long =
+    override fun addSchedule(schedule: Schedule): Single<Long> =
         scheduleLocalDataSource.addSchedule(schedule)
 
     override fun deleteScheduleById(schedule: Schedule): Int =

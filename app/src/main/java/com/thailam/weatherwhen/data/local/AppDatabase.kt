@@ -14,7 +14,6 @@ import com.thailam.weatherwhen.data.model.Schedule.Companion.TBL_SCHEDULE_EPOCH_
 import com.thailam.weatherwhen.data.model.Schedule.Companion.TBL_SCHEDULE_ID
 import com.thailam.weatherwhen.data.model.Schedule.Companion.TBL_SCHEDULE_NAME
 import com.thailam.weatherwhen.data.model.Schedule.Companion.TBL_SCHEDULE_NOTE
-import com.thailam.weatherwhen.data.model.Schedule.Companion.TBL_SCHEDULE_PREFIX
 
 
 @Database(entities = [DailyForecast::class, Schedule::class], version = 2, exportSchema = false)

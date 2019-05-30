@@ -11,7 +11,7 @@ class ScheduleLocalDataSource(
     override fun getAllSchedules(): Single<List<Schedule>> =
         scheduleDao.getAllSchedules()
 
-    override fun addSchedule(schedule: Schedule): Long =
+    override fun addSchedule(schedule: Schedule): Single<Long> =
         scheduleDao.addSchedule(schedule)
 
     override fun deleteScheduleById(schedule: Schedule): Int =

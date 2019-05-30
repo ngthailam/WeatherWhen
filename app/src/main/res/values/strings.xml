@@ -17,4 +17,6 @@
     <string name="title_activity_schedule">ScheduleActivity</string>
     <string name="demo_time">08:30 AM</string>
     <string name="demo_date">Monday August 12,2019</string>
+    <string name="loading">Loading...</string>
+    <string name="success">Success</string>
 </resources>

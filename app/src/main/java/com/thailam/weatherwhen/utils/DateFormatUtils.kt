@@ -3,10 +3,12 @@ package com.thailam.weatherwhen.utils
 import android.content.Context
 import android.text.format.DateUtils
 import java.text.SimpleDateFormat
-import java.util.Date
-import java.util.Locale
+import java.util.*
 
 object DateFormatUtils {
+    private val TIME_FORMATTER = SimpleDateFormat("dd-MM-yyyy")
+    private const val FORMAT_D_M_Y = "%d-%d-%d"
+
     /**
      * returns current date in "Month dd, yyyy" format
      */
@@ -41,4 +43,15 @@ object DateFormatUtils {
             .append(" | ")
             .append(DateUtils.formatDateTime(context, number * 1000, 0))
             .toString()
+
+    /**
+     * returns long from year-month-dayOfMonth
+     * @param year (Int) year : yyyy
+     * @param month (Int) month : mm
+     * @param dayOfMonth (Int) date : dd
+     */
+    fun dateToLong(year: Int, month: Int, dayOfMonth: Int): Long {
+        val dateStr = String.format(Locale.getDefault(), FORMAT_D_M_Y, dayOfMonth, month, year)
+        return TIME_FORMATTER.parse(dateStr).time
+    }
 }

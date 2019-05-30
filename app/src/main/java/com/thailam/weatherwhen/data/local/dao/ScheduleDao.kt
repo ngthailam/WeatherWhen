@@ -11,7 +11,7 @@ abstract class ScheduleDao {
     abstract fun getAllSchedules(): Single<List<Schedule>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    abstract fun addSchedule(schedule: Schedule): Long
+    abstract fun addSchedule(schedule: Schedule): Single<Long>
 
     @Delete
     abstract fun deleteScheduleById(schedule: Schedule): Int

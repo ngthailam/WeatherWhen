@@ -6,7 +6,7 @@ import io.reactivex.Single
 interface ScheduleDataSource {
     interface Local {
         fun getAllSchedules(): Single<List<Schedule>>
-        fun addSchedule(schedule: Schedule): Long
+        fun addSchedule(schedule: Schedule): Single<Long>
         fun deleteScheduleById(schedule: Schedule): Int
     }
 }
